@@ -1,2 +1,3 @@
-# cgpse
-Source code for "DNA-aware evaluation and debiasing of sequence-to-function models"
+# DNA-aware evaluation and debiasing of sequence-to-function models
+
+Coming very soon...
