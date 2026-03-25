@@ -1,3 +1,3 @@
 # DNA-aware evaluation and debiasing of sequence-to-function models
 
-Coming very soon...
+In preparation... will be available this week.
