@@ -1,6 +1,6 @@
 # Single-headed cgLM ablation experiments
 
-This directory is intended for the single-headed cgLM ablation analyses used in Figure S6.
+This directory covers the single-headed cgLM ablation analyses used in Figure S6.
 
 ## Dataset
 - `ATAC__GM12878__ENCSR637XSC`
@@ -28,8 +28,9 @@ This directory is intended for the single-headed cgLM ablation analyses used in 
   - `chrombpnet__nobias_model__predicted`
   - `alphagenome__predicted`
 
-## Inputs
-This directory expects the matched GM12878 ATAC dataset under `workspace/datasets/ATAC__GM12878__ENCSR637XSC/` and the released ablation checkpoints under `workspace/models/ATAC__GM12878__ENCSR637XSC___checkpoints/single_headed_cglm/ablation_experiments/`.
 
 ## Notes
-Exact reproduction scripts and commands for this directory are in preparation.
+- `figS6a__total_count_equalization` reproduces the total-count equalization control.
+- `figS6b__cgLM_input_resolution` reproduces the resolution ablation.
+- `figS6c__cgLM_input_length` reproduces the locality/input-length ablation.
+- Raw evaluation outputs are written under `workspace/logs/single_headed_cglm/ablation_experiments/`, and rendered figures are written under `workspace/plots/single_headed_cglm/ablation_experiments/`.

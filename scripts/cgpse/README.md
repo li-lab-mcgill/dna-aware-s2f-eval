@@ -1,13 +1,13 @@
 # Critic-Guided Profile-Shape Editing (CGPSE)
 
-This directory is intended for the manuscript's preliminary CGPSE analyses on GM12878 ATAC-seq.
+This directory covers the manuscript's preliminary CGPSE analyses on GM12878 ATAC-seq.
 
 ## Dataset
 - `ATAC__GM12878__ENCSR637XSC`
 
 ## Figure Mapping
 
-### Evaluation of debiased profile shapes in terms of profile shape fidelity (Figure 5a)
+### Critic-based evaluation of original and edited profile shapes (Figure 5a)
 - `dna_free_dae`
   - `bpnet__predicted`
   - `alphagenome__predicted`
@@ -15,16 +15,15 @@ This directory is intended for the manuscript's preliminary CGPSE analyses on GM
   - `bpnet__predicted`
   - `alphagenome__predicted`
 
-### Evaluation of debiased profile shapes with training objective defining critic model (Figure 5b)
+### Profile-shape fidelity evaluation (Figure 5b)
 - `dna_free_dae`
   - `bpnet__predicted`
   - `alphagenome__predicted`
 - `dna_aware_editor`
   - `bpnet__predicted`
   - `alphagenome__predicted`
-
-## Inputs
-This directory expects the matched GM12878 ATAC dataset under `workspace/datasets/ATAC__GM12878__ENCSR637XSC/` and the released CGPSE checkpoints under `workspace/models/ATAC__GM12878__ENCSR637XSC___checkpoints/`.
 
 ## Notes
-Exact reproduction scripts and commands for this directory are in preparation.
+- `fig5a__pre_debiasing_critic_based_eval/` contains critic-based evaluation scripts for original versus edited outputs.
+- `fig5b__profile_shape_fidelity_eval/` contains the profile-shape fidelity summaries used in Figure 5b.
+- Raw evaluation outputs are written under `workspace/logs/cgpse/`, and rendered figures are written under `workspace/plots/cgpse/`.
