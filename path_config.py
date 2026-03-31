@@ -8,7 +8,9 @@ PROJECT_DIR = Path(__file__).resolve().parent
 WORKSPACE_DIR = PROJECT_DIR / "workspace"
 TRAINED_CHECKPOINT_DIR = WORKSPACE_DIR / "models"
 DATASET_DIR = WORKSPACE_DIR / "datasets"
-CONFIG_DIR = WORKSPACE_DIR / "configs"
+LOG_DIR = WORKSPACE_DIR / "logs"
+PLOT_DIR = WORKSPACE_DIR / "plots"
+CONFIG_DIR = PROJECT_DIR / "configs"
 EXTERNAL_DIR = PROJECT_DIR / "external"
 
 # add SRC dir to path for imports

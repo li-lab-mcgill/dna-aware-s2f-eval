@@ -1,16 +1,16 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-mkdir -p workspace
-cd workspace
+REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
+WORKSPACE_DIR="${REPO_ROOT}/workspace"
 
-mkdir -p datasets
-cd datasets
+mkdir -p \
+  "${WORKSPACE_DIR}/datasets" \
+  "${WORKSPACE_DIR}/models" \
+  "${WORKSPACE_DIR}/logs" \
+  "${WORKSPACE_DIR}/plots"
 
-cd ..
-mkdir -p models
-cd models
 
-echo -e "For cell lines and assays of interest, please follow the following steps for preparing trained model checkpoints and datasets for use:" 
-echo -e "1. Download the dataset and model from Zenodo as outlined in the README.md."
-echo -e "2. Unzip the downloaded file and place the model checkpoints in workspace/models."
-echo -e "3. Unzip the downloaded file and place the datasets in workspace/datasets."
+echo "Workspace prepared under ${WORKSPACE_DIR}"
+echo "Next step: Download paired datasets and checkpoints with python download_zenodo.py"
+echo "Checked-in configs live under ${REPO_ROOT}/configs"
