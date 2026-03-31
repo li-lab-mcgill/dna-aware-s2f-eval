@@ -1,0 +1,31 @@
+{
+  "zenodo_record": "19297875",
+  "readmes": {
+    "datasets": {
+      "archive_name": "datasets_readme.txt",
+      "destination_dir": "workspace/datasets"
+    },
+    "checkpoints": {
+      "archive_name": "checkpoints_readme.txt",
+      "destination_dir": "workspace/models"
+    }
+  },
+  "bundles": {
+    "ATAC__GM12878__ENCSR637XSC": {
+      "dataset_archive": "ATAC__GM12878__ENCSR637XSC___datasets.zip",
+      "checkpoint_archive": "ATAC__GM12878__ENCSR637XSC___checkpoints.zip"
+    },
+    "ATAC__K562__ENCSR868FGK": {
+      "dataset_archive": "ATAC__K562__ENCSR868FGK___datasets.zip",
+      "checkpoint_archive": "ATAC__K562__ENCSR868FGK___checkpoints.zip"
+    },
+    "TF_ChIP__GM12878__ELF1__ENCSR841NDX": {
+      "dataset_archive": "TF_ChIP__GM12878__ELF1__ENCSR841NDX___datasets.zip",
+      "checkpoint_archive": "TF_ChIP__GM12878__ELF1__ENCSR841NDX___checkpoints.zip"
+    },
+    "TF_ChIP__K562__CTCF__ENCSR000EGM": {
+      "dataset_archive": "TF_ChIP__K562__CTCF__ENCSR000EGM___datasets.zip",
+      "checkpoint_archive": "TF_ChIP__K562__CTCF__ENCSR000EGM___checkpoints.zip"
+    }
+  }
+}
